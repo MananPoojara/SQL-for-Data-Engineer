@@ -20,3 +20,11 @@ SELECT * FROM sales;
 
 -- Retrieve data only for a specific product, such as "Product A":
 SELECT * FROM sales WHERE product = 'Widget A';
+
+
+--Retrieve the total revenue for each day:
+SELECT sales_date, SUM(revenue) FROM sales GROUP BY sales_date ORDER BY sales_date;
+
+--Retrieve the total quantity sold for each product:
+SELECT product, SUM(quantity) FROM sales GROUP BY product ORDER BY SUM(quantity);
+
