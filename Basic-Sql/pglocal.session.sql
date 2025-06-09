@@ -44,6 +44,6 @@ SELECT * FROM sales WHERE product = 'Widget A' OR revenue < 300;
 SELECT * FROM sales WHERE sales_date Between '2023-01-02' AND '2023-01-04';
 SELECT * FROM sales WHERE quantity BETWEEN 5 AND 10;
 --Like : For selecting recorde with pattern contidion 
---below query is fetching data where the product name start with Wid..
+--below query is fetching data where the product name start with Wid.. like widget A..
 SELECT * FROM sales WHERE product LIKE 'Wid%';
 
