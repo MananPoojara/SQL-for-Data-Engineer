@@ -47,3 +47,27 @@ SELECT * FROM sales WHERE quantity BETWEEN 5 AND 10;
 --below query is fetching data where the product name start with Wid.. like widget A..
 SELECT * FROM sales WHERE product LIKE 'Wid%';
 
+
+--Alter Query 
+--adding
+--renaming 
+--For adding new columns like in first we created table with schema 
+CREATE TABLE users (
+    id BIGINT,
+    name VARCHAR,
+    email VARCHAR,
+    age INT
+);
+INSERT INTO users (id, name, email, age) VALUES
+    (1, 'Jhon Doe', 'jhondoe@gmail.com', 21),
+    (2, 'Mira gajera', 'mira23@gmail.com', 20),
+    (33, 'Jaimin fatak', 'jaimin34@gmail.com', 34);
+SELECT * FROM users;
+
+-- Now i wanna change "name" column with "username" 
+-- we can use ALTER TABLE RENAME COLUMN 
+ALTER TABLE users RENAME COLUMN name TO username;
+
+--Now I wanna Add column phonno.
+--we can use ALTER TABLE ADD COLUMN 
+ALTER TABLE users ADD COLUMN phonno BIGINT;
