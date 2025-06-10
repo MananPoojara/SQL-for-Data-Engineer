@@ -98,9 +98,9 @@ Contributions are welcome! If you'd like to add SQL challenges, improve existing
 
 ## 📬 Contact
 
-📧 Email: [your.email@example.com]  
-📎 LinkedIn: [your-linkedin-url]  
-🌐 Portfolio: [your-portfolio-url]
+📧 Email: [mananpujarawork@gmail.com]  
+📎 LinkedIn: [https://www.linkedin.com/in/manan-pujara-62a51a300]  
+🌐 X: [https://x.com/mananpujara123]
 
 ---
 
