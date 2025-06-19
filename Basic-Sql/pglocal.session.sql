@@ -58,10 +58,10 @@ CREATE TABLE users (
     email VARCHAR,
     age INT
 );
-INSERT INTO users (id, name, email, age) VALUES
-    (1, 'Jhon Doe', 'jhondoe@gmail.com', 21),
-    (2, 'Mira gajera', 'mira23@gmail.com', 20),
-    (33, 'Jaimin fatak', 'jaimin34@gmail.com', 34);
+INSERT INTO users (id, us, email, age, phonno) VALUES
+    (1, 'Jhon Doe', 'jhondoe@gmail.com', 21, 4123241421),
+    (2, 'Mira gajera', 'mira23@gmail.com', 20, 5435324344),
+    (33, 'Jaimin fatak', 'jaimin34@gmail.com', 34, 324245434);
 SELECT * FROM users;
 
 -- Now i wanna change "name" column with "username" 
@@ -71,3 +71,7 @@ ALTER TABLE users RENAME COLUMN name TO username;
 --Now I wanna Add column phonno.
 --we can use ALTER TABLE ADD COLUMN 
 ALTER TABLE users ADD COLUMN phonno BIGINT;
+
+-- Now we added new column and inserted data but it add new columns insted of adding data in existing column would be great 
+-- we can use ALTER TABLE ALTER COLUMN TYPE
+ALTER TABLE users ALTER COLUMN age TYPE smallint;
