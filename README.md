@@ -29,12 +29,12 @@ SQL-for-Data-Engineer/
 
 ## ✅ Topics Covered
 
-### 🟢 Basic SQL
+### 🟢 [Basic SQL](./Basic-Sql/pglocal.session.sql)
 - SELECT, WHERE, ORDER BY, LIMIT
 - Filtering and Sorting
 - Basic Aggregations
 
-### 🟡 Intermediate SQL
+### 🟡 [Intermediate SQL](./Intermediate-Sql/Intemediate.sql)
 - JOINS (INNER, LEFT, RIGHT, FULL)
 - GROUP BY + HAVING
 - Subqueries
