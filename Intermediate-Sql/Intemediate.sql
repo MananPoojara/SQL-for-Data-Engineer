@@ -72,4 +72,77 @@ INSERT INTO employee_details (id, emp_role, age, gender) VALUES
 
 SELECT * FROM employee_details;
 
+-------------------------------------------------------------------------
+
+-- let's understand Composite Key 
+-- it's like giving multiple columns a primary key 
+CREATE TABLE Student (
+  student_id int,
+  department_id int,
+  name varchar(50),
+  age int,
+  gender varchar(10),
+  PRIMARY KEY (employee_id, department_id) --composite key
+);
+
+-------------------------------------------------------------------------
+
+-- another key called Unique Key
+-- we use unique as constraint but here we use it as key 
+CREATE TABLE Student (
+  student_id int,
+  department_id int,
+  name varchar(50),
+  email VARCHAR(50) UNIQUE, -- Unique key 
+  age int,
+  gender varchar(10),
+  PRIMARY KEY (employee_id, department_id) --composite key
+);
+
+-------------------------------------------------------------------------
+
+-- Another key Candidate Key
+-- this key is use for uniquely identified columns table has multiple candidate keys 
+CREATE TABLE Student (
+  student_id int,
+  department_id int,
+  name varchar(50),
+  email VARCHAR(50), 
+  phone NUMERIC(20),
+  age int,
+  gender varchar(10),
+  UNIQUE (email), -- Candidate Key
+  UNIQUE (phone) -- Candidate Key
+);
+
+-------------------------------------------------------------------------
+
+-- another key Super Key
+-- it is combination of attributes that are unique in each row in table 
+-- all candidate key is super key but not all super key is candidate key 
+CREATE TABLE sales (
+  sales_id int,
+  product_id int,
+  customer_id int,
+  sales_date date,
+  sales_amount decimal(10,2),
+  PRIMARY KEY (sales_id),
+  UNIQUE (product_id, customer_id, sales_date) --Super key
+);
+
+-------------------------------------------------------------------------
+
+-- Last Alternate key 
+-- think it is a backup key for primary key 
+-- basically alternate key is a candidate key but not selected as primary key
+CREATE TABLE students (
+  id int,
+  roll_no int,
+  name varchar(50),
+  age int,
+  gender varchar(10),
+  PRIMARY KEY (id),
+  UNIQUE (roll_no)
+);
+
 
