@@ -145,4 +145,21 @@ CREATE TABLE students (
   UNIQUE (roll_no)
 );
 
+--------------------------------------------------------------------------
+-- Update query 
+SELECT * FROM employee; 
+UPDATE employee 
+SET emp_salary = 50000 WHERE emp_name = 'browsky';
+----------
+UPDATE employee 
+SET emp_name = 'Drake' WHERE emp_name = 'browsky';
 
+---------------------------------------------------------------------------
+-- Delete Query 
+Delete FROM employee
+where emp_name = 'Drake';
+
+---------------------------------------------------------------------------
+--Insert Query 
+INSERT INTO employee (emp_id, emp_name, emp_salary)
+VALUES (3, 'butcher', 60000);
